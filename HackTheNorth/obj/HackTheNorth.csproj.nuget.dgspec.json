@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raps4\\OneDrive\\Documents\\HackTheNorth\\HackTheNorth\\HackTheNorth\\HackTheNorth.csproj": {}
+    "C:\\Users\\Salman\\Documents\\GitHub\\HackTheNorth\\HackTheNorth\\HackTheNorth.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raps4\\OneDrive\\Documents\\HackTheNorth\\HackTheNorth\\HackTheNorth\\HackTheNorth.csproj": {
+    "C:\\Users\\Salman\\Documents\\GitHub\\HackTheNorth\\HackTheNorth\\HackTheNorth.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raps4\\OneDrive\\Documents\\HackTheNorth\\HackTheNorth\\HackTheNorth\\HackTheNorth.csproj",
+        "projectUniqueName": "C:\\Users\\Salman\\Documents\\GitHub\\HackTheNorth\\HackTheNorth\\HackTheNorth.csproj",
         "projectName": "HackTheNorth",
-        "projectPath": "C:\\Users\\raps4\\OneDrive\\Documents\\HackTheNorth\\HackTheNorth\\HackTheNorth\\HackTheNorth.csproj",
-        "packagesPath": "C:\\Users\\raps4\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raps4\\OneDrive\\Documents\\HackTheNorth\\HackTheNorth\\HackTheNorth\\obj\\",
+        "projectPath": "C:\\Users\\Salman\\Documents\\GitHub\\HackTheNorth\\HackTheNorth\\HackTheNorth.csproj",
+        "packagesPath": "C:\\Users\\Salman\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Salman\\Documents\\GitHub\\HackTheNorth\\HackTheNorth\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\raps4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Salman\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {

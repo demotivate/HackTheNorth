@@ -1,0 +1,17 @@
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\bin\Debug\net6.0-windows\HackTheNorth.exe
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\bin\Debug\net6.0-windows\HackTheNorth.deps.json
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\bin\Debug\net6.0-windows\HackTheNorth.runtimeconfig.json
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\bin\Debug\net6.0-windows\HackTheNorth.dll
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\bin\Debug\net6.0-windows\HackTheNorth.pdb
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\HackTheNorth.csproj.AssemblyReference.cache
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\HackTheNorth.Form1.resources
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\HackTheNorth.csproj.GenerateResource.cache
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\HackTheNorth.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\HackTheNorth.AssemblyInfoInputs.cache
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\HackTheNorth.AssemblyInfo.cs
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\HackTheNorth.csproj.CoreCompileInputs.cache
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\HackTheNorth.dll
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\refint\HackTheNorth.dll
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\HackTheNorth.pdb
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\HackTheNorth.genruntimeconfig.cache
+C:\Users\Salman\Documents\GitHub\HackTheNorth\HackTheNorth\obj\Debug\net6.0-windows\ref\HackTheNorth.dll
