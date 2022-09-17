@@ -37,6 +37,7 @@ namespace HackTheNorth
             convMaps.Add("zT", "\u03b4");
 
             convMaps.Add("pM", "\u00b1");
+            convMaps.Add("/=", "\u2260");
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -70,7 +71,8 @@ namespace HackTheNorth
                 last == 'a' ||
                 last == 'b' ||
                 last == 'g' ||
-                last == 'z';
+                last == 'z' ||
+                last == '/';
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
