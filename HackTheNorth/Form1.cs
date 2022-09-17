@@ -15,12 +15,12 @@ namespace HackTheNorth
         private void MainForm_Load(object sender, EventArgs e)
         {
             convMaps = new Dictionary<string, string>();
-            convMaps.Add("sqrt()", "\u4f60");
+            convMaps.Add("sqrt()", "\u221a");
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
-            richTextBox1.Text += convMaps["sqrt()"];
+            
         }
     }
 }
