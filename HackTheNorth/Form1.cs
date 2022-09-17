@@ -5,8 +5,8 @@ namespace HackTheNorth
 {
     public partial class MainForm : Form
     {
-        Dictionary<string, string> convMaps;
-        string currWord;
+        Dictionary<string, string> convMaps = new Dictionary<string, string>();
+        string currWord = "";
 
         public MainForm()
         {
@@ -15,8 +15,6 @@ namespace HackTheNorth
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            convMaps = new Dictionary<string, string>();
-            currWord = "";
 
             convMaps.Add("pi", "\u03c0");
 
@@ -36,8 +34,19 @@ namespace HackTheNorth
             convMaps.Add("gM", "\u03b3");
             convMaps.Add("zT", "\u03b4");
 
-            convMaps.Add("pM", "\u00b1");
+            convMaps.Add("+-", "\u00b1");
             convMaps.Add("/=", "\u2260");
+
+            convMaps.Add("_0", "\u2080");
+            convMaps.Add("_1", "\u2081");
+            convMaps.Add("_2", "\u2082");
+            convMaps.Add("_3", "\u2083");
+            convMaps.Add("_4", "\u2084");
+            convMaps.Add("_5", "\u2085");
+            convMaps.Add("_6", "\u2086");
+            convMaps.Add("_7", "\u2087");
+            convMaps.Add("_8", "\u2088");
+            convMaps.Add("_9", "\u2089");
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -72,7 +81,9 @@ namespace HackTheNorth
                 last == 'b' ||
                 last == 'g' ||
                 last == 'z' ||
-                last == '/';
+                last == '/' ||
+                last == '_' ||
+                last == '+';
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
