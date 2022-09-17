@@ -39,7 +39,7 @@
             this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.MainInput = new System.Windows.Forms.TextBox();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,28 +118,28 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // MainInput
+            // richTextBox1
             // 
-            this.MainInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainInput.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MainInput.Location = new System.Drawing.Point(0, 33);
-            this.MainInput.Multiline = true;
-            this.MainInput.Name = "MainInput";
-            this.MainInput.Size = new System.Drawing.Size(1000, 529);
-            this.MainInput.TabIndex = 1;
-            this.MainInput.Text = "Type Here...";
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 33);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(1000, 529);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "Type here...";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 562);
-            this.Controls.Add(this.MainInput);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Hack The North";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -159,6 +159,6 @@
         private ToolStripMenuItem redoToolStripMenuItem;
         private ToolStripMenuItem viewToolStripMenuItem;
         private ContextMenuStrip contextMenuStrip1;
-        private TextBox MainInput;
+        private RichTextBox richTextBox1;
     }
 }
