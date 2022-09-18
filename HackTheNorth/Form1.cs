@@ -7,6 +7,7 @@ namespace HackTheNorth
     {
         Dictionary<string, string> convMaps = new Dictionary<string, string>();
         string currWord = "";
+        //int prevLen = 0;
 
         public MainForm()
         {
@@ -56,9 +57,21 @@ namespace HackTheNorth
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             string fullText = richTextBox1.Text;
+            if (fullText.Length == 0)
+            {
+                richTextBox2.Text = "";
+                //prevLen = 0;
+                return;
+            }
+            //if (prevLen > fullText.Length)
+            //{
+            //    currWord = "";
+            //    return;
+            //}
             if (isSus(fullText))
             {
                 currWord += fullText[fullText.Length - 1];
+                //prevLen = fullText.Length;
                 return;
             }
             if (currWord.Length > 0)
@@ -68,10 +81,13 @@ namespace HackTheNorth
                 {
                     richTextBox2.Text += convMaps[currWord];
                     currWord = "";
+                    //prevLen = fullText.Length;
                     return;
                 }
                 currWord = "";
+                if(fullText.Length >= 2) richTextBox2.Text += fullText[fullText.Length - 2];
             }
+            //prevLen = fullText.Length;
             richTextBox2.Text += fullText[fullText.Length - 1];
         }
 
@@ -100,7 +116,12 @@ namespace HackTheNorth
             //...
             if (richTextBox1.Text.Length < realTextLength(richTextBox2.Text))
             {
-                richTextBox2.Text = richTextBox1.Text;
+                string newStr = "";
+                for(int i = 0; i < richTextBox2.Text.Length-2; i++)
+                {
+                    newStr += richTextBox2.Text[i];
+                }
+                richTextBox2.Text = newStr;
             }
         }
 
