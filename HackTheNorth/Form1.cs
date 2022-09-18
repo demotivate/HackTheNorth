@@ -36,6 +36,10 @@ namespace HackTheNorth
 
             convMaps.Add("+-", "\u00b1");
             convMaps.Add("/=", "\u2260");
+            convMaps.Add("<=", "\u2264");
+            convMaps.Add(">=", "\u2265");
+            convMaps.Add("~=", "\u2248");
+            convMaps.Add("fN", "\u221E");
 
             convMaps.Add("_0", "\u2080");
             convMaps.Add("_1", "\u2081");
@@ -63,6 +67,7 @@ namespace HackTheNorth
                 if (convMaps.ContainsKey(currWord))
                 {
                     richTextBox2.Text += convMaps[currWord];
+                    currWord = "";
                     return;
                 }
                 currWord = "";
@@ -74,8 +79,8 @@ namespace HackTheNorth
         {
             int len = str.Length;
             if (len == 0) return false;
-            char last = str[len - 1];            
-            return last == '^' || 
+            char last = str[len - 1];
+            return last == '^' ||
                 last == 'p' ||
                 last == 'a' ||
                 last == 'b' ||
@@ -83,13 +88,17 @@ namespace HackTheNorth
                 last == 'z' ||
                 last == '/' ||
                 last == '_' ||
-                last == '+';
+                last == '+' ||
+                last == '<' ||
+                last == '>' ||
+                last == '~' ||
+                last == 'f';
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
             //...
-            if(richTextBox1.Text.Length < realTextLength(richTextBox2.Text))
+            if (richTextBox1.Text.Length < realTextLength(richTextBox2.Text))
             {
                 richTextBox2.Text = richTextBox1.Text;
             }
@@ -98,7 +107,7 @@ namespace HackTheNorth
         private int realTextLength(string str)
         {
             int res = 0;
-            foreach(char chr in str)
+            foreach (char chr in str)
             {
                 if (convMaps.ContainsValue(chr.ToString()))
                 {
@@ -111,6 +120,5 @@ namespace HackTheNorth
             }
             return res;
         }
-
     }
 }
