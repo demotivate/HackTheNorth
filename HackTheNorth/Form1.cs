@@ -79,8 +79,8 @@ namespace HackTheNorth
         {
             int len = str.Length;
             if (len == 0) return false;
-            char last = str[len - 1];            
-            return last == '^' || 
+            char last = str[len - 1];
+            return last == '^' ||
                 last == 'p' ||
                 last == 'a' ||
                 last == 'b' ||
@@ -98,7 +98,7 @@ namespace HackTheNorth
         private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
             //...
-            if(richTextBox1.Text.Length < realTextLength(richTextBox2.Text))
+            if (richTextBox1.Text.Length < realTextLength(richTextBox2.Text))
             {
                 richTextBox2.Text = richTextBox1.Text;
             }
@@ -107,7 +107,7 @@ namespace HackTheNorth
         private int realTextLength(string str)
         {
             int res = 0;
-            foreach(char chr in str)
+            foreach (char chr in str)
             {
                 if (convMaps.ContainsValue(chr.ToString()))
                 {
@@ -120,6 +120,5 @@ namespace HackTheNorth
             }
             return res;
         }
-
     }
 }
