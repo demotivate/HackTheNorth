@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\raps4\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\raps4\\.nuget\\packages"
+      "C:\\Users\\Salman\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Salman\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
