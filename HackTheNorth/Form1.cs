@@ -36,6 +36,10 @@ namespace HackTheNorth
 
             convMaps.Add("+-", "\u00b1");
             convMaps.Add("/=", "\u2260");
+            convMaps.Add("<=", "\u2264");
+            convMaps.Add(">=", "\u2265");
+            convMaps.Add("~=", "\u2248");
+            convMaps.Add("fN", "\u221E");
 
             convMaps.Add("_0", "\u2080");
             convMaps.Add("_1", "\u2081");
@@ -63,6 +67,7 @@ namespace HackTheNorth
                 if (convMaps.ContainsKey(currWord))
                 {
                     richTextBox2.Text += convMaps[currWord];
+                    currWord = "";
                     return;
                 }
                 currWord = "";
@@ -83,7 +88,11 @@ namespace HackTheNorth
                 last == 'z' ||
                 last == '/' ||
                 last == '_' ||
-                last == '+';
+                last == '+' ||
+                last == '<' ||
+                last == '>' ||
+                last == '~' ||
+                last == 'f';
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
